@@ -1,7 +1,9 @@
 function button() {
     const pi = 3.14;
 
-    var input = document.getElementById("inputBtn").value;
+    let input = document.getElementById("inputBtn").value;
 
-    document.getElementById("diamtr").innerText = "De omtrek van een circel is " + pi * input;
+    document.getElementById("diameter").innerText = "Omtrek: " + pi * input;
+
+    document.getElementById("omtrek").innerText = "Oppervlakte: " + input * input * pi * 0.25;
 }
